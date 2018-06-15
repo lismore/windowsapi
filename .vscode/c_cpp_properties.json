@@ -9,7 +9,13 @@
         },
         "includePath": [
             "${workspaceFolder}",
-            "${workspaceFolder}/inc"
+            "${workspaceFolder}/inc",
+            "${workspaceFolder}/libs",
+            "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v7.1A\\Lib",
+            "C:/MinGW/include/",
+            "C:/MinGW/lib/gcc/mingw32/4.8.1/include/",
+            "C:/MinGW/lib/gcc/mingw32/4.8.1/include/c++",
+            "C:/MinGW/lib/gcc/mingw32/4.8.1/include/c++/mingw32"
         ],
         "defines": [
             "_DEBUG",

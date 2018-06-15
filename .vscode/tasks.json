@@ -9,7 +9,7 @@
                 "-g",
                 "${workspaceFolder}\\src\\HelloWorld\\helloWorld.cpp",
                 "-o",
-                "helloWorld.exe"
+                "c:/GitHub/windowsapi/src/HelloWorld/helloWorld"
             ],
             "group": {
                 "kind": "build",
@@ -29,6 +29,32 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
+            }
+        },
+        {
+            "label": "build hello world 2",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\src\\HelloWorld.2\\helloWorld2.cpp",
+                "-L",
+                "C:/Program Files (x86)/Microsoft SDKs/Windows/v7.1A/Lib/",
+                "-l",
+                "Gdi32.Lib",
+                "-o",
+                "c:/GitHub/windowsapi/src/HelloWorld.2/helloWorld2",
+                "-Wno-write-strings"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative","${workspaceRoot}"],
+                "pattern": {"regexp": "^(.*):(//d+):(//d+)://s+(warning|error)://s+(.*)$",
+                            "file": 1,"line": 2,"column": 3,"severity": 4,"message": 5}
             }
         }
     ]
