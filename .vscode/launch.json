@@ -2,10 +2,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(Windows) Launch",
+            "name": "(Windows) Launch HelloWorld1",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/helloWorld.exe",
+            "program": "${workspaceRoot}/src/HelloWorld.1/helloWorld1.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true
+        },
+        {
+            "name": "(Windows) Launch HelloWorld",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/HelloWorld/helloWorld.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
